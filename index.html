@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="shortcut icon" href="image/logo2.jpeg">
+	<link rel="stylesheet" href="portfolio1.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link href="../bootstrap/bootstrap-examples/assets/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+		<style>
+			#About{
+				background-image: url(image/geometric.jpg); 
+				padding-bottom:10%; 
+				margin-top: 0;
+			}
+			#About .contenu_about{
+				width: 75%; 
+				height: 370px; 
+				background-color: #f5f5f5;
+				border-radius: 20px;
+				box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+				display: flex;
+				margin: -7% auto 20px auto; 
+				justify-content: space-evenly; 
+				align-items: center; 
+				margin-top:10%; 
+				padding-bottom:2%;
+			}
+
+			#About .contenu_about img{
+				height: 300px; 
+				border-radius:60px;  
+				box-shadow: 2px 2px 2px rgba(7, 0, 0, 0.733);
+			}
+
+			#About .contenu_about .text_about button{
+				width: 120px; 
+				height: 40px; 
+				outline:none; 
+				border: none; 
+				font-family: calibri; 
+				background-color: black; 
+				color:#f5f5f5
+			}
+			#About .contenu_about .text_about button a{
+				text-decoration: none;
+				color:#f5f5f5; 
+				width: 120px; 
+				height: 40px; 
+				outline:none;
+				font-family: calibri;
+			}
+			#About .contenu_about .text_about{
+				width: 550px;
+			}
+			#About .contenu_about .text_about .p1{
+				color: black; 
+				font-family: myriad pro; 
+				font-weight: bold; 
+				font-size: 23px; 
+				line-height: 0px;
+			}
+			#About .contenu_about .text_about .p2{
+				color: black; 
+				font-size: 13px; 
+				font-family: myriad pro; 
+				font-weight: bold; 
+				line-height: 5px;
+			}
+			#About .contenu_about .text_about .p3{
+				color:black; 
+				font-family: calibri; 
+				font-size:16px;
+			}
+
+			#projets{
+				margin-bottom:0px;
+			}
+			#projets .div1{
+				height: 600px; 
+				background-image: url(image/geometric.jpg); 
+				padding:5% 10% 45% 10%;
+			}
+			#projets .div1 .titres{
+				width:500px;
+				 margin:60px 0px;
+			}
+
+			#projets .div1 .titres p{
+				font-family: calibri; 
+				font-weight: bold; 
+				color:black;
+			}
+			#projets .div1 .contenu_box{
+				display:flex; 
+				justify-content:space-between;
+			}
+			#projets .div1 .contenu_box .box2{
+				width:300px; height:320px; 
+				background-repeat:no-repeat; 
+				background-size: cover; 
+				box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.644); 
+				background-image:url(image/GBD.jpeg);
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				flex-direction:column;
+			}
+			#projets .div1 .contenu_box .box3{
+				width:300px; height:320px; 
+				background-repeat:no-repeat; 
+				background-size: cover; 
+				box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.644); 
+				background-image:url(image/Algo.png);
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				flex-direction:column;
+			}
+			
+			#projets .div1 .contenu_box .box1 a button{
+				width: 100px;
+				height:30px;
+				background-color:#f5f5f5;
+				border:none;
+				outline:none;
+				border-radius:5px;
+			}
+			#projets .div1 .contenu_box .box2 a button{
+				width: 100px;
+				height:30px;
+				background-color:#f5f5f5;
+				border:none;
+				outline:none;
+				border-radius:5px;
+			}
+			#projets .div1 .contenu_box .box3 a button{
+				width: 100px;
+				height:70px;
+				background-color:#f5f5f5;
+				border:none;
+				outline:none;
+				border-radius:5px;
+			}
+
+			#cv{
+				background-image: url(image/geometric.jpg); 
+				padding-bottom:100px; 
+				padding-top:100px;
+			}
+			#cv .div1{
+				max-width:80%;
+				border: solid 2px black;  
+				box-shadow: 2px 2px 12px 3px rgba(0, 0, 0, 0.644);
+				margin-left:10%;
+			}
+			.int{
+				background-color: black;
+				padding-top:1%;
+			}
+			.int .text_compétences{
+				width:500px; 
+				margin:40px 0px;
+			}
+
+			#projets .div1 .contenu_box .box1{
+				width:300px;
+				height:320px;
+				background-repeat:no-repeat; 
+				background-size: cover; 
+				box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.644); 
+				background-image:url(image/rapcis.png);
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				flex-direction:column;
+			}
+			#projets .div1 .contenu_box .box1 .p1{
+				color: black;font-family:calibri;font-size:23px;line-height:0px;
+			}
+			#projets .div1 .contenu_box .box2 .p1{
+				color: black;font-family:calibri;font-size:23px;line-height:0px;
+			}
+			#projets .div1 .contenu_box .box3 .p1{
+				color: black;font-family:calibri;font-size:23px;line-height:0px;
+			}
+			#projets .div1 .contenu_box p{
+				color: black;
+			}
+
+			#cv .div1 .box .int .text_compétences .p1{
+				font-family: calibri; 
+				font-weight:bold; 
+				color:#f5f5f5; 
+				font-size:30px; 
+				line-height:0px;
+			}
+			#cv .div1 .box .int .text_compétences .p2{
+				font-family: calibri; 
+				font-weight: bold; 
+				color:#f5f5f5; 
+				font-size:15px; 
+				line-height:5px;
+			}
+			#cv .div1 .box .flex{
+				gap: 20px; 
+			display:flex;
+			}
+			#cv .div1 .box .flex .w25{
+				width: 25%; 
+				background-image:url(image/geometric); 
+				border-radius:15px; 
+				padding-top:5px; 
+				box-sizing:border-box;
+			}
+			#cv .div1 .box .flex .w25 h3{
+				color: #f5f5f5;
+				margin-top:10px;
+			}
+			#cv .div1 .box .flex .w25 img{
+				width: 100px; 
+				border-radius:5px;
+			}
+			#cv .div1 .box .ligne2{
+				gap: 20px; 
+				display:flex;
+			}
+			#cv .div1 .box .ligne2 .w25{
+				width: 25%; 
+				background-image:url(image/geometric); 
+				border-radius:15px; 
+				padding-top:5px; 
+				box-sizing:border-box;
+			}
+			#cv .div1 .box .ligne2 .w25 h3{
+				color: #f5f5f5;
+				margin-top:10px;
+			}
+			#cv .div1 .box .ligne2 .w25 img{
+				width: 100px; 
+				border-radius:5px;
+			}
+
+
+			#Etudes{
+				background-image: url(image/geometric.jpg); 
+				padding-top:100px;
+			}
+			#Etudes .section1{
+				background-image: url(image/geometric.jpg); 
+				padding-bottom:150px; 
+				padding-top:90px;
+			}
+			#Etudes .section1 .div1{
+				max-width:80%;
+				border: solid 2px black;  
+				box-shadow: 2px 2px 12px 3px rgba(0, 0, 0, 0.644);
+				margin-left:10%; 
+				display:flex;
+			}
+			#Etudes .int{
+				background-color: black;
+				padding-top:1%;
+			}
+			#Etudes .int .text_compétences{
+				width:500px; 
+				margin:60px 0px;
+			}
+			#Etudes .int .text_compétences p{
+				font-family: calibri; 
+				font-weight:bold; 
+				color:#f5f5f5; 
+				font-size:30px; 
+				line-height:0px; 
+				margin-left:10%;
+			}
+			#Etudes .section1 .div1 .left{
+				font-size: 100%; 
+				font-weight:700;
+				height:20px; 
+				color:#f5f5f5;
+				margin-left:2%;
+			}
+			
+			
+			
+			
+			
+		</style>
+</head>
+<body>
+	<header class="header">
+		
+		<a class="logo"><i class='bx bx-ghost'></i>Portef<span style="color: #00abf0;">feuille</span></a>
+		<nav class="navbar">
+			<a href="#">Acceuil</a>
+			<a href="#About">A Propos</a>
+			<a href="#projets">Projects</a>
+			<a href="#cv">Compétences</a>
+			<a href="#formulaire">Contact</a>
+		</nav>
+	</header>
+	<section class="page1" style="background-image: url('tof2.jpg');">
+		<div class="home-content">
+			<h1>Bonjour, je suis Lamine Dieng</h1>
+			<h3>Informaicien</h3>
+			<p>« La seule limite à la hauteur de vos réalisations est la portée de vos rêves et votre volonté de travailler dur pour les réaliser. »</p>
+					<div class="btn-box">
+						<a href="#">Recrutez moi</a>
+						<a href="contact.html">Discutons</a>
+					</div>
+		</div>
+		<div class="home-web">
+			<a href="https://www.facebook.com/profile.php?id=100011391988654&mibextid=kFxxJD"><i class='bx bxl-facebook'></i></a>
+			<a href="https://www.instagram.com/mouhamed.dieng209?utm_source=ig_web_button_share_sheet&igsh=ODdmZWVhMTFiMw=="><i class='bx bxl-instagram'></i></a>
+			<a href="https://wa.me/+221786339806?text=Bonjour%2C"><i class='bx bxl-whatsapp' ></i></a>
+			<a href="https://www.linkedin.com/in/mouhamed-dieng-17774b2b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class='bx bxl-linkedin'></i></a>
+		</div>
+	</section><hr style="border-top: 1px solid black; border-bottom: 1px solid #081b29;">
+ 
+<!-- pour la partie à propos de moi -->
+	<section id="About"><br><br><br>
+	<div>
+		<div class="contenu_about">
+			<img src="image/4.jpg" alt="pp">
+
+			<div class="text_about">
+				<p class="p1">A Propos de Moi</p>
+				<p class="p2">Developper & Technicien</p>
+				<p class="p3">Passionné et curieux d’esprit, je suis un étudiant avec peu d'expérience dans le domaine de la télécommunication et Réseau, mais aussi dans le domaine de la programmation. 
+					Doté d’un esprit analytique et créatif, je suis capable de relever des défis et de proposer des solutions innovantes.
+					Au fil de ma formation, j’ai acquis une compréhension approfondie des principes de la programmation des bases de données, des algorithmes et des bonnes pratiques de codage.
+				 Passionné par les nouvelles technologies, je m’efforce constamment de me tenir informé des dernières tendances et innovations.
+					 </p>
+				<button><a href="cv_45.html" download="cv_45.html">Télécharger CV</a></button>
+			</div>
+		</div>
+	</div>
+	</section><hr style="border-top: 1px solid black; border-bottom: 1px solid #081b29;">
+	
+	<!-- partie projets -->
+	<section id="projets">
+		<div class="div1">
+			<!-- text -->
+			<div class="titres">
+			<p style=" font-size:30px; line-height:0px;">Mes Projets</p>
+			<p style=" font-size:15px; line-height:5px;">Voici quelques unes de mes Projets réalisés</p>
+		    </div>
+
+			<!-- les box -->
+			<div class="contenu_box">
+				<div class="box1">
+					<p class="p1">Téléphonie</p>
+					<p>Mise en place d'un réseau téléphonique avec astérisk</p>
+					<a href="telephonie.pdf"><button>Lire</button></a>
+				</div>
+
+				<div class="box2">
+					<p class="p1">cybersécurité</p>
+					<p>Sensibilisation à la Sécurité Informatique</p>
+					<a href="cybersécurité.pdf"><button>Lire</button></a>
+				</div>
+
+				<div class="box3">
+					<p class="p1">Algorithme</p>
+					<p>Mise en place d'un algorithme d'assurance automobile et de remise de monnaie</p>
+					<a href="Projet algorithme.pdf"><button>Lire</button></a>
+				</div>
+			</div>
+		</div>
+	</section><hr style="border-top: 1px solid black; border-bottom: 1px solid #081b29;">
+
+	<!-- Partie CV -->
+	<section id="cv">
+<div class="div1">
+		<div class="box text-center" >
+			<!-- Titre & paragraphe -->
+		<section class="int">
+			<div class="text_compétences">
+				<p class="p1">Mes Compétences</p>
+				<p class="p2">Voici mes Compétences acquises</p>
+			</div><hr style="border-top: 1px solid black; border-bottom: 10px solid #2a3f49;">
+		</section>
+<!-- les box -->
+			<div class="flex">
+				<div class="w25">
+					<img src="image/html5.png" alt="logo">
+						<h3>HTML</h3>
+				</div>
+				<div class="w25">
+					<img src="image/bootstrap.png" alt="logo">
+						<h3>BOOTSTRAP</h3>
+				</div>
+				<div class="w25">
+					<img src="image/mysql.png" alt="logo">
+						<h3>MYSQL</h3>
+				</div>
+				<div class="w25">
+					<img src="image/javascript.png" alt="logo">
+						<h3>JAVASCRIPT</h3>
+				</div>
+				<div class="w25">
+					<img src="image/css.png" alt="logo">
+						<h3>CSS</h3>
+				</div>
+				<div class="w25">
+					<img src="image/php.png" alt="logo">
+						<h3>PHP</h3>
+				</div>
+			</div><br><br>
+
+			<div class="ligne2">
+				<div class="w25">
+					<img src="image/linux.png" alt="logo">
+						<h3>LINUX</h3>
+				</div>
+				<div class="w25">
+					<img src="image/windows.png" alt="logo">
+						<h3>WINDOWS</h3>
+				</div>
+				<div class="w25">
+					<img src="image/gns3.png" alt="logo">
+						<h3>GNS3</h3>
+				</div>
+				<div class="w25">
+					<img src="image/wireshark.png" alt="logo">
+						<h3>WIRESHARK</h3>
+				</div>
+			</div><br><br>
+        </div>
+</div>
+	</section>
+
+
+
+	<section id="Etudes">
+			<!-- div contenant Etudes & Formations, langues et centres intérêts -->
+
+	<section class="section1">
+		<div class="div1">
+	<div class="left" style="width: 50%;">
+		<section class="int">
+			<div class="text_compétences">
+				<p>LANGUES</p>
+			</div><hr style="border-top: 1px solid black; border-bottom: 10px solid #2a3f49;">
+		</section>
+		
+			<p>WOLOF, Langue Maternelle<progress value="80" max="100"></progress></p><br>
+            <p>FRANCAIS intermédiaire  <progress value="70" max="100"></progress></p><br>
+            <p>ANGLAIS Débutant        <progress value="30" max="100"></progress></p><br>		
+	</div>
+	<div class="right">
+		  <!-- Centres d'intérêt -->
+		  <section class="int" style="background-color: black;padding-top:1%;">
+			<div class="text_compétences" style=" width:520px; margin:60px 0px;">
+				<p style="font-family: calibri; font-weight:bold; color:#f5f5f5; font-size:30px; line-height:0px; margin-left:30%;">CENTRES INTERET</p>
+			</div><hr style="border-top: 1px solid black; border-bottom: 10px solid #2a3f49;">
+		</section>
+		  <div class="general" style="display: flex;">
+		   <div class="section1" style="margin-left: 20%;">
+			   <figure class="figure">
+				   <img src="image/jeux.png" alt="jeux vidéos" style="width: 100px; height: 80px; border-radius: 50%; box-shadow: 0px 0px 15px #555;">
+				   <figcaption style="color: #f5f5f5;">Jeux vidéos</figcaption> 
+   
+				   <figure class="figure">
+					   <img src="image/music.jpeg" alt="Music" style="width: 100px; height: 80px; border-radius: 50%; box-shadow: 0px 0px 15px #555;">
+					   <figcaption style="color: #f5f5f5;">Music</figcaption>
+		   </div>
+					   <div class="section1" style="margin-left: 30%;">
+						   <figure class="figure">
+							   <img src="image/sport.jpeg" alt="jeux vidéos" style="width: 100px; height: 80px; border-radius: 50%; box-shadow: 0px 0px 15px #555;">
+							   <figcaption style="color: #f5f5f5;">sport</figcaption> 
+   
+   
+							   <figure class="figure">
+								   <img src="image/Art.jpeg" alt="Music" style="width: 100px; height: 80px; border-radius: 50%; box-shadow: 0px 0px 15px #555;">
+								   <figcaption style="color: #f5f5f5;">Art en Général</figcaption>
+					   </div>
+		   </div>
+	</div>
+		</div>
+	</section><hr style="border-top: 1px solid black; border-bottom: 1px solid #081b29;">
+
+	<!-- partie contact -->
+	<section id="formulaire" style="background-image: url(image/geometric.jpg);padding-bottom:50px; padding-top:100px;top: 50%;left: 50%;">
+	<div style="max-width:80%;border: solid 2px black;  box-shadow: 2px 2px 12px 3px rgba(0, 0, 0, 0.644);margin-left:10%;">
+		<form method="GET" action="Message.php" style="background-color: beige; padding: 40px; border-radius: 13px;">
+			<h1 style="font-size: 20px;">Envoyez-moi un Message</h1>
+			<div class="separation" style="width: 100%; height: 2px; background-color: black;"></div>
+			<div class="corps-formulaire" style="display: flex; flex-wrap: wrap; margin-bottom: 30px;">
+				<div class="gauche">
+					<div class="groupe" style=" margin-top: 20px; display: flex;flex-direction: column;">
+						<label for="Prénom">Prenom</label>
+						<input type="text" name="Prenom" required style="margin-top: 5px;padding: 10px 5px 10px 30px;border: 1px solid #c9c9c9;outline-color: black; border-radius: 5px;">
+						<i class="fa fa-user" aria-hidden="true" style="left: 0;margin-top:-40px;padding: 9px 8px;color: black;"></i>
+					</div>
+					<div class="groupe" style=" margin-top: 20px;display: flex;flex-direction: column;">
+						<label for="Nom">Nom</label>
+						<input type="text" name="Nom" required style="margin-top: 5px;padding: 10px 5px 10px 30px;border: 1px solid #c9c9c9;outline-color: black; border-radius: 5px;">
+						<i class="fa fa-user" aria-hidden="true" style="left: 0;margin-top: -40px;padding: 9px 8px;color: black;"></i>
+					</div>
+					<div class="groupe" style=" margin-top: 20px;display: flex;flex-direction: column;">
+						<label for="Email">Email</label>
+						<input type="text" name="Email" required style="margin-top: 5px;padding: 10px 5px 10px 30px;border: 1px solid #c9c9c9;outline-color: black; border-radius: 5px;">
+						<i class="fa fa-envelope" aria-hidden="true" style="left: 0;margin-top: -40px;padding: 9px 8px;color: black;"></i>
+					</div>
+					<div class="groupe" style=" margin-top: 20px; display: flex; flex-direction: column; ">
+						<label for="Téléphone">Telephone</label>
+						<input type="text" name="Telephone" required style="margin-top: 5px;padding: 10px 5px 10px 30px;border: 1px solid #c9c9c9;outline-color: black; border-radius: 5px;">
+						<i class="fa fa-phone" aria-hidden="true" style="left: 0;margin-top: -40px;padding: 9px 8px;color: black;"></i>
+					</div>
+				</div>
+			 
+				<div class="droite" style="margin-left: 15%; @media screen and (max-width:920px){margin-left: 40px;}">
+					<div class="groupe" style=" margin-top: 20px; display: flex; flex-direction: column; height: 100%;">
+						<label for="Message">Message</label>
+						<textarea name="Message" required style="margin-top: 5px;padding: 150px;background-color: #f8f8f8;border: 2px solid black;outline: none; border-radius: 5px; resize: none;height: 72%;"></textarea>
+					</div>
+				</div>
+		
+			</div>
+			<div class="pied-formulaire" style="text-align:center;">
+			   <button type="submit" name="submit" value="ok" style="margin-top: 0px; background-color: black; color: white; font-size: 15px; border: none;padding: 10px 50px; border-radius: 5px; outline: none; cursor: pointer; transition: transform 0.5s;" >Envoyer le Message</button> 
+			</div>
+		   </form>
+	</div>
+	</section>
+
+	<!-- FOOTER -->
+	<footer style="background-color: black; height:50px;">
+		<p style="color: #f5f5f5; text-align:center;padding-top:1%;">©Copyright 2023-2024 Mouhamadou Lamine Dieng</p>
+	</footer>
+</body>
+</html>
